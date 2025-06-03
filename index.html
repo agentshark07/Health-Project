@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SFCS - Stress Free College Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="mascot-container">
+      <img src="otter-mascot.png" alt="Otter Mascot" class="mascot" />
+      <div id="bubble" class="speech-bubble" onclick="nextMessage()">
+        <p id="bubble-text">Welcome to SFCS (Stress Free College Search)!</p>
+      </div>
+    </div>
+
+    <div id="form-container" class="form hidden">
+      <select id="grade">
+        <option value="">Select your grade</option>
+        <option value="11th">11th Grade</option>
+        <option value="12th">12th Grade</option>
+      </select>
+      <input type="number" id="months" placeholder="How many months until you graduate?" />
+      <input type="text" id="gpa" placeholder="What is your GPA?" />
+      <input type="text" id="sat" placeholder="What were your highest SAT scores?" />
+      <button onclick="generateRoadmap()">Generate Roadmap</button>
+    </div>
+
+    <div id="roadmap" class="roadmap hidden"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
