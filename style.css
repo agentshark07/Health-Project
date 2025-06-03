@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dbeafe;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mascot-container {
+  position: relative;
+  display: inline-block;
+}
+
+.mascot {
+  width: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.speech-bubble {
+  background: url('speech-bubble.png') no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 220px;
+  top: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.speech-bubble p {
+  color: black;
+  font-size: 14px;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+.hidden {
+  display: none;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+input, select, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  font-size: 16px;
+}
+
+.roadmap {
+  background: #bbf7d0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
