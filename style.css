@@ -27,7 +27,7 @@ body {
 }
 
 .speech-bubble {
-  background: url('images/speech-bubble.png') no-repeat;
+  background: url('speech-bubble.png') no-repeat;
   background-size: 100% 100%; /* Stretch the image to fill the container */
   width: 500px; /* Increased width for a longer bubble */
   height: 250px; /* Increased height as needed */
