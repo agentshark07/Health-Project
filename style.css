@@ -2,34 +2,38 @@ body {
   font-family: Arial, sans-serif;
   background-color: #dbeafe;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   text-align: center;
+  position: relative;
+  min-height: 100vh;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .mascot-container {
-  position: relative;
-  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .mascot {
-  width: 200px;
-  position: relative;
-  z-index: 1;
+  width: 300px; /* Increased size */
+  height: auto;
 }
 
 .speech-bubble {
-  background: url('speech-bubble.png') no-repeat;
+  background: url('images/speech-bubble.png') no-repeat;
   background-size: contain;
   width: 400px;
   height: 200px;
   position: absolute;
   left: 220px;
-  top: 0;
+  bottom: 150px; /* Adjusted to position above the mascot */
   cursor: pointer;
   display: flex;
   align-items: center;
