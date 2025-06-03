@@ -27,13 +27,13 @@ body {
 }
 
 .speech-bubble {
-  background: url('speech-bubble.png') no-repeat;
-  background-size: contain;
-  width: 400px;
-  height: 200px;
+  background: url('images/speech-bubble.png') no-repeat;
+  background-size: 100% 100%; /* Stretch the image to fill the container */
+  width: 500px; /* Increased width for a longer bubble */
+  height: 250px; /* Increased height as needed */
   position: absolute;
-  left: 220px;
-  bottom: 150px; /* Adjusted to position above the mascot */
+  left: 320px; /* Adjusted position to align with the larger mascot */
+  bottom: 180px; /* Adjusted to position above the mascot */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -43,10 +43,12 @@ body {
 
 .speech-bubble p {
   color: black;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold; /* Make text thicker */
   max-width: 90%;
   word-wrap: break-word;
 }
+
 
 .hidden {
   display: none;
